@@ -1,0 +1,56 @@
+{
+  "_currentVersionState": {
+    "$invariant": "PUBLISHED"
+  },
+  "name": {
+    "$invariant": "Classic Lamington"
+  },
+  "_updateDate": {
+    "$invariant": "2020-02-24T04:12:06.0455865+00:00"
+  },
+  "_hasChildren": false,
+  "_level": 3,
+  "_createDate": "2019-11-27T10:58:35.757Z",
+  "_id": "1e1f2260-2223-4f83-b30d-d61f98ae51c0",
+  "_links": {
+    "self": {
+      "href": "https://api.umbraco.io/content/1e1f2260-2223-4f83-b30d-d61f98ae51c0"
+    },
+    "root": {
+      "href": "https://api.umbraco.io/content"
+    },
+    "children": {
+      "href": "https://api.umbraco.io/content/1e1f2260-2223-4f83-b30d-d61f98ae51c0/children"
+    },
+    "publish": {
+      "href": "https://api.umbraco.io/content/1e1f2260-2223-4f83-b30d-d61f98ae51c0/publish"
+    },
+    "unpublish": {
+      "href": "https://api.umbraco.io/content/1e1f2260-2223-4f83-b30d-d61f98ae51c0/unpublish"
+    },
+    "contenttype": {
+      "href": "https://api.umbraco.io/content/type/product"
+    }
+  },
+  "contentTypeAlias": "product",
+  "parentId": "64c58ff6-cf12-4070-9717-d2e7791c0fab",
+  "sortOrder": 0,
+  "title": {
+    "$invariant": "Classic Lamington"
+  },
+  "price": {
+    "$invariant": "2.50"
+  },
+  "description": {
+    "$invariant": "<p>The classics in a pack of six.</p>"
+  },
+  "image": {
+    "$invariant": "umb://media/33510976a8574860b5c1c2d7db9a3625"
+  },
+  "quantity": {
+    "$invariant": "37"
+  },
+  "isOnSpecialToday": {
+    "$invariant": "1"
+  }
+}
