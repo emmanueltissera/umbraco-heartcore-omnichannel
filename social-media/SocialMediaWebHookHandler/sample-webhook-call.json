@@ -3,7 +3,7 @@
     "$invariant": "PUBLISHED"
   },
   "name": {
-    "$invariant": "Classic Lamington"
+    "$invariant": "Jam and Vanilla Lamington"
   },
   "_updateDate": {
     "$invariant": "2020-02-24T04:12:06.0455865+00:00"
@@ -36,19 +36,19 @@
   "parentId": "64c58ff6-cf12-4070-9717-d2e7791c0fab",
   "sortOrder": 0,
   "title": {
-    "$invariant": "Classic Lamington"
+    "$invariant": "Jam and Vanilla Lamington"
   },
   "price": {
-    "$invariant": "2.50"
+    "$invariant": "3.00"
   },
   "description": {
-    "$invariant": "<p>The classics in a pack of six.</p>"
+    "$invariant": "<p>Six pack of lamingtons layered with jam and vanilla cream.</p>"
   },
   "image": {
     "$invariant": "umb://media/33510976a8574860b5c1c2d7db9a3625"
   },
   "quantity": {
-    "$invariant": "37"
+    "$invariant": "21"
   },
   "isOnSpecialToday": {
     "$invariant": "1"

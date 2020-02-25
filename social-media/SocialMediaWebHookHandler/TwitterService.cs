@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -8,23 +9,28 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
 using SocialMediaWebHookHandler.Models;
 using SocialMediaWebHookHandler.Extensions;
-using System;
-using CoreTweet;
+using Microsoft.Extensions.Options;
 
 namespace SocialMediaWebHookHandler
 {
-    public static class TwitterService
+    public class TwitterService
     {
+        private readonly TwitterAppSettings _twitterAppSettings;
+
+        public TwitterService(IOptions<TwitterAppSettings> twitterAppSettings)
+        {
+            _twitterAppSettings = twitterAppSettings.Value;
+        }
+
         [FunctionName("TwitterService")]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
-            ILogger log)
+        public async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req, ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             if (DailyTweetSent())
             {
-                return (ActionResult) new OkObjectResult("Ignored");
+                return new OkObjectResult("Ignored");
             }
 
             var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -39,23 +45,23 @@ namespace SocialMediaWebHookHandler
                 : new BadRequestObjectResult("Failure");
         }
 
-        private static bool DailyTweetSent()
+        private bool DailyTweetSent()
         {
             // This function will check to see if there is a record for the current date in table storage
-            return true;
+            return false;
         }
 
-        private static bool SendTweet(Product product)
+        private bool SendTweet(Product product)
         {
-            var session = OAuth.Authorize(Environment.GetEnvironmentVariable("TwitterApp:ConsumerKey"),
-                Environment.GetEnvironmentVariable("TwitterApp:ConsumerSecret"));
-            var tokens = session.GetTokens(Environment.GetEnvironmentVariable("TwitterApp:PinCode"));
+            var message = $"{product.Title} on special today.\n" +
+                          $"{product.Quantity} baked fresh just now. Come and grab one!\n" +
+                          "See lordlamington.com for more mouth-watering delicacies.";
 
-            var message = $"{product.Title} on special today.\n"+
-                            "{product.Quantity} baked fresh just now. Come and grab one!\n" +
-                            "See lordlamington.com for more mouth-watering delicacies.";
+            var twitterClient = new TwitterClient(_twitterAppSettings.ConsumerApiKey,
+                _twitterAppSettings.ConsumerApiSecretKey,
+                _twitterAppSettings.AccessToken, _twitterAppSettings.AccessTokenSecret);
 
-            tokens.Statuses.Update(status => message);
+            twitterClient.TweetText(message, string.Empty);
 
             RecordDailyTweetSentAction();
 
