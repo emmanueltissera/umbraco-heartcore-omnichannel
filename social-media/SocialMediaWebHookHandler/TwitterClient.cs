@@ -10,6 +10,10 @@ using Newtonsoft.Json.Linq;
 
 namespace SocialMediaWebHookHandler
 {
+    /// <summary>
+    /// Client which communicates with the Twitter API
+    /// <remarks> Source: https://blog.dantup.com/2016/07/simplest-csharp-code-to-post-a-tweet-using-oauth/ </remarks>
+    /// </summary>
     public class TwitterClient
     {
         private readonly string _consumerKey;

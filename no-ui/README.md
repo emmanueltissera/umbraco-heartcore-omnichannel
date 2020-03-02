@@ -1,4 +1,4 @@
-## Setup a Google Assistant agent step by step:
+# Setup a Google Assistant agent step by step:
 
 1.  Go to [https://dialogflow.cloud.google.com/](https://dialogflow.cloud.google.com/)
     
