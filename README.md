@@ -11,7 +11,7 @@ The channels which have been explored and their respective sources can be found 
 ![An omnichannel experience](https://lh3.googleusercontent.com/hvprtFXjrrW3GjYoeX-CWcZ63sl8acf3A9EdjDquXE7l571W2yVwnqy4d8admX_MmTgPLCkSosT5Nr2wgd7NUDSIUvxsCljxE8PkKYKA0XKsi8dBl0ZPUZXovWKei00SOo22sdQmsXYSUHj5Lm8rSMyPtG2Cm32jIwNsm0JL2kSOk3U1T14RkvbynTtgBzAEuT4N_hZUctqGwoib0KULSgta8dI3HcBAwjO-LnA2ZMry2yEgkKVy32kid1MBEwshULK-Cfjmdxc_ZdfMQXjdbzxSTfw0uxJmX5Bk3863Y1aNqhtXchePi9jHDMF3TYlbTT4Sc9g1GxUOVza7bareGc0evZaNZkrJkXpU0G1zIf8ykZAkTli6apxgbCAlfoPEqDa9QyHuvItHwIdPkOn0g7v-0XEkpllVAO0bzfBU5fCjTy1V4BgeUzdjhzzf9Zd6JLV2V3CkZArZY-onI8tWQrrvE8y3UVqeCU9TX4aku_O2Wg5jORtSw4hjV6Xw4-84cIWLBtK5_jphrdBsrifyF5fvetK2zL8b_nNwEJiNL2b_gomFOr-kdSb6jaxh-3LrcMrqlkW4744b-ABXcsckJMRRKjL665Gco9oiPxmBGdnAsZy6i1LrnoovL7AuDdYLuJydBxa-Zf_6zZGZzWOZ6u6ig4J9yjfSOP4ta9xeJgjIcLCC2hnpxtfDWw2TzGA8Tn9p1YIWZq0fajuozZR_5fZIDgNj7x8q-bxgK1CNKFj14j7dkQ=w1102-h501-no)
 
 ## No-UI
-Set up a Google Dialogflow Agent and give the agent smarts with these [instructions](https://github.com/emmanueltissera/umbraco-heartcore-omnichannel/tree/master/no-ui)
+Set up a Google Dialogflow Agent and give the agent smarts using these [instructions](https://github.com/emmanueltissera/umbraco-heartcore-omnichannel/tree/master/no-ui)
 
 ## Smart Display
 Same [instructions](https://github.com/emmanueltissera/umbraco-heartcore-omnichannel/tree/master/no-ui) as for no-UI implementation.
