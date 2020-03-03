@@ -1,6 +1,6 @@
 # An Omnichannel experience with Umbraco Heartcore
 
-This source code repository is a companion to the Skrift titled [An Omnichannel experience with Umbraco Heartcore](https://skrift.io/articles/archive/omnichannel-experience-with-umbraco-heartcore/).
+This source code repository is a companion to the Skrift article titled [An Omnichannel experience with Umbraco Heartcore](https://skrift.io/articles/archive/an-omnichannel-experience-with-umbraco-heartcore/).
 
 ## Content set up
 Instructions to set up the content to run these demos/PoCs can be found [here](https://github.com/emmanueltissera/umbraco-heartcore-omnichannel/tree/master/content-set-up).
